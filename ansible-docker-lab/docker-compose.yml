@@ -1,0 +1,14 @@
+services:
+  node1:
+    build: .
+    container_name: node1
+    ports:
+      - "2226:22"
+      - "8082:80"
+
+  node2:
+    build: .
+    container_name: node2
+    ports:
+      - "2227:22"
+      - "8083:80"
